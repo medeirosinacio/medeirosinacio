@@ -1,5 +1,7 @@
 ```php
 
+// PHP 8 is <3
+
 $eu = new Pessoa(
     nome:  'Douglas Medeiros',
     email: 'medeirosinacio@outlook.com',
