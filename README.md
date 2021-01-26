@@ -11,7 +11,7 @@ $eu = new Pessoa(
 $eu->setarStatus(new Vida\Status(
     estudando:   ['Laravel 8', 'Clean Code'],
     interessado: ['vue.js', 'Flask'],
-    objetivo:    ['Contribuir para a comunicade', 'LaraAD']
+    objetivo:    ['Contribuir para a comunidade', 'LaraAD']
 ));
 
 $minhasHabilidades = new Vida\Habilidades(
