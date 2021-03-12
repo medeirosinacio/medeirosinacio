@@ -22,7 +22,7 @@ $minhasHabilidades = new Vida\Habilidades(
     tecnologia:  [
                     'Git', 'Gitlab CI/CD', 'Markdown', 'Postman',
                     'Docker', 'Docker Compose', 'RabbitMQ', 'Websocket',
-                    'Vagrant', 'WSL2', 'Zsh', 'Nginx', 'PHP-FPM',
+                    'Vagrant', 'WSL2', 'Zsh', 'Nginx', 'PHP-FPM', 'jekyllrb'
                     'Memcached', 'Maillhog', 'CentOS', 'Ubuntu'
                  ]
 );
