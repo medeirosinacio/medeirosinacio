@@ -5,7 +5,7 @@
 $eu = new Pessoa(
     nome:  'Douglas Medeiros',
     email: 'medeirosinacio@outlook.com',
-    idade:   27,
+    idade:   28,
 );
 
 $eu->setarStatus(new Vida\Status(
