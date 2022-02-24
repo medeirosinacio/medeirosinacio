@@ -5,11 +5,11 @@
 $eu = new Pessoa(
     nome:  'Douglas Medeiros',
     email: 'medeirosinacio@outlook.com',
-    idade:   28,
+    idade:  29,
 );
 
 $eu->setarStatus(new Vida\Status(
-    estudando:   ['Laravel 8', 'Clean Code'],
+    estudando:   ['Laravel 9', 'Clean Code'],
     interessado: ['vue.js', 'Flask'],
     objetivo:    ['Contribuir para a comunidade', 'LaraAD']
 ));
