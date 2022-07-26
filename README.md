@@ -4,7 +4,7 @@
 
 $eu = new Pessoa(
     nome:  'Douglas Medeiros',
-    email: 'medeirosinacio@outlook.com',
+    email: 'eu@douglasmedeiros.dev',
     idade:  29,
 );
 
