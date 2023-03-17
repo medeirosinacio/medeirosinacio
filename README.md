@@ -9,7 +9,7 @@ $eu = new Pessoa(
 );
 
 $eu->setarStatus(new Vida\Status(
-    estudando:   ['Java', 'Clean Code'],
+    estudando:   ['Java', 'Arquitetura'],
     interessado: ['vue.js', 'Flask'],
     objetivo:    ['Contribuir para a comunidade']
 ));
