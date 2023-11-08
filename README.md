@@ -2,36 +2,36 @@
 
 // PHP 8 is <3
 
-$eu = new Pessoa(
-    nome:  'Douglas Medeiros',
+$developer = new Dev(
+    name:  'Douglas Medeiros',
     email: 'eu@douglasmedeiros.dev',
-    idade:  30
+    age:   30
 );
 
-$eu->setarStatus(new Vida\Status(
-    estudando:   ['Java', 'Arquitetura'],
-    interessado: ['vue.js', 'Flask'],
-    objetivo:    ['Contribuir para a comunidade']
+$developer->setStatus(new Life\Status(
+    learning:   ['Java', 'Software Architecture'],
+    exploring:  ['vue.js', 'Flask'],
+    aiming:     ['Empower the Community']
 ));
 
-$minhasHabilidades = new Vida\Habilidades(
-    linguagens:  ['PHP', 'Python', 'Bash', 'HTML/CSS', 'Javascript', 'Powershell'],
-    editores:    ['PHPStorm', 'VsCode', 'Notepad++', 'Vim'],
-    frameworks:  ['Bootstrap', 'Laravel', 'Yii2', 'Jquery'],
-    banco:       ['PostgreSQL', 'MySql', 'Redis'],
-    tecnologia:  [
-                    'Git', 'Gitlab CI/CD', 'Markdown', 'Postman',
-                    'Docker', 'Docker Compose', 'RabbitMQ', 'Websocket',
-                    'Vagrant', 'WSL2', 'Zsh', 'Nginx', 'PHP-FPM', 'Jekyll',
-                    'Memcached', 'Maillhog', 'CentOS', 'Ubuntu'
-                 ]
+$mySkills = new Life\Skills(
+    languages:   ['PHP', 'Python', 'Bash', 'HTML/CSS', 'JavaScript', 'PowerShell'],
+    editors:     ['PHPStorm', 'VS Code', 'Notepad++', 'Vim'],
+    frameworks:  ['Bootstrap', 'Laravel', 'Yii2', 'jQuery'],
+    databases:   ['PostgreSQL', 'MySQL', 'Redis'],
+    techStack:   [
+        'Git', 'Gitlab CI/CD', 'Markdown', 'Postman',
+        'Docker', 'Docker Compose', 'RabbitMQ', 'WebSocket',
+        'Vagrant', 'WSL2', 'Zsh', 'Nginx', 'PHP-FPM', 'Jekyll',
+        'Memcached', 'MailHog', 'CentOS', 'Ubuntu'
+    ]
 );
 
-$dev = new Profissao\Desenvolvedor(pessoa: $eu, habilidades: $minhasHabilidades);
+$developerRole = new Career\Developer(person: $developer, skills: $mySkills);
 
-while($dev->temCafé())  
+while ($developerRole->hasCoffee())  
 {
-  $dev->codar();
+    $developerRole->code();
 }
 
 ```
