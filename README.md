@@ -17,8 +17,8 @@ $developer->setStatus(new Life\Status(
 $mySkills = new Life\Skills(
     languages:   ['PHP', 'Python', 'Bash', 'HTML/CSS', 'JavaScript', 'PowerShell'],
     editors:     ['PHPStorm', 'VS Code', 'Notepad++', 'Vim'],
-    frameworks:  ['Bootstrap', 'Laravel', 'Yii2', 'jQuery'],
-    databases:   ['PostgreSQL', 'MySQL', 'Redis'],
+    frameworks:  ['HiperF', 'Bootstrap', 'Laravel', 'Yii2', 'jQuery'],
+    databases:   ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB'],
     techStack:   [
         'Git', 'Gitlab CI/CD', 'Markdown', 'Postman',
         'Docker', 'Docker Compose', 'RabbitMQ', 'WebSocket',
