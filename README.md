@@ -1,37 +1,42 @@
 ```php
 
-// PHP 8 is <3
+// PHP 8 is 💙, and runs on ☕️
 
 $developer = new Dev(
     name:  'Douglas Medeiros',
-    email: 'eu@douglasmedeiros.dev',
-    age:   30
+    email: new Email('eu@douglasmedeiros.dev'),
+    birthDate: new DateTimeImmutable('1993-06-15'),
 );
 
-$developer->setStatus(new Life\Status(
-    learning:   ['Java', 'Software Architecture'],
-    exploring:  ['vue.js', 'Flask'],
-    aiming:     ['Empower the Community']
-));
+$developer->install(new Life\PackageManager([
+    'curiosity',
+    'coffee-dependency',
+    'debugging-skills',
+]));
 
 $mySkills = new Life\Skills(
-    languages:   ['PHP', 'Python', 'Bash', 'HTML/CSS', 'JavaScript', 'PowerShell'],
-    editors:     ['PHPStorm', 'VS Code', 'Notepad++', 'Vim'],
-    frameworks:  ['HyperF', 'Bootstrap', 'Laravel', 'Yii2', 'jQuery'],
-    databases:   ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB'],
+    languages:   ['PHP', 'Python', 'Bash', 'JavaScript', 'PowerShell', 'Go', 'Ruby', 'HTML/CSS', ...],
+    editors:     ['PHPStorm (dark mode only)', 'VS Code', 'Notepad++ (for nostalgia)', 'Vim (how to quit?)', ...],
+    frameworks:  ['HyperF', 'Bootstrap', 'Laravel', 'Yii2', 'jQuery (still alive!), 'Flask', ...],
+    databases:   ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'AWS Aurora', 'SQLite'],
     techStack:   [
         'Git', 'Gitlab CI/CD', 'Markdown', 'Postman',
         'Docker', 'Docker Compose', 'RabbitMQ', 'WebSocket',
         'Vagrant', 'WSL2', 'Zsh', 'Nginx', 'PHP-FPM', 'Jekyll',
-        'Memcached', 'MailHog', 'CentOS', 'Ubuntu'
+        'Memcached', 'MailHog', 'CentOS', 'Ubuntu', ...
     ]
 );
 
 $developerRole = new Career\Developer(person: $developer, skills: $mySkills);
 
-while ($developerRole->hasCoffee())  
-{
-    $developerRole->code();
+try {
+    while ($developerRole->hasEnergy() || $developerRole->hasCoffee()) {
+        $developerRole->code();
+    }
+} catch (Life\Exceptions\BurnoutException $e) {
+    $developerRole->rest();
+    $developerRole->hydrate();
+    $developerRole->comeBackStronger();
 }
 
 ```
