@@ -4,8 +4,8 @@
 
 $developer = new Dev(
     name:  'Douglas Medeiros',
-    email: new Email('eu@douglasmedeiros.dev'),
-    birthDate: new DateTimeImmutable('1993-06-15'),
+    email: 'eu@douglasmedeiros.dev',
+    birthDate: '1993-06-05',
 );
 
 $developer->install(new Life\PackageManager([
@@ -17,7 +17,7 @@ $developer->install(new Life\PackageManager([
 $mySkills = new Life\Skills(
     languages:   ['PHP', 'Python', 'Bash', 'JavaScript', 'PowerShell', 'Go', 'Ruby', 'HTML/CSS', ...],
     editors:     ['PHPStorm (dark mode only)', 'VS Code', 'Notepad++ (for nostalgia)', 'Vim (how to quit?)', ...],
-    frameworks:  ['HyperF', 'Bootstrap', 'Laravel', 'Yii2', 'jQuery (still alive!), 'Flask', ...],
+    frameworks:  ['HyperF', 'Bootstrap', 'Laravel', 'Yii2', 'jQuery (still alive!)', 'Flask', ...],
     databases:   ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'AWS Aurora', 'SQLite'],
     techStack:   [
         'Git', 'Gitlab CI/CD', 'Markdown', 'Postman',
