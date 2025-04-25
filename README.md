@@ -2,13 +2,13 @@
 
 // PHP 8 is 💙, and runs on ☕️
 
-$developer = new Dev(
+$doug = new Person(
     name:  'Douglas Medeiros',
     email: 'eu@douglasmedeiros.dev',
     birthDate: '1993-06-05',
 );
 
-$developer->install(new Life\PackageManager([
+$doug->install(new Life\PackageManager([
     'curiosity',
     'coffee-dependency',
     'debugging-skills',
@@ -27,16 +27,16 @@ $mySkills = new Life\Skills(
     ]
 );
 
-$developerRole = new Career\Developer(person: $developer, skills: $mySkills);
+$developer = new Career\Developer(person: $doug, skills: $mySkills);
 
 try {
-    while ($developerRole->hasEnergy() || $developerRole->hasCoffee()) {
-        $developerRole->code();
+    while ($developer->hasEnergy() || $developer->hasCoffee()) {
+        $developer->code();
     }
 } catch (Life\Exceptions\BurnoutException $e) {
-    $developerRole->rest();
-    $developerRole->hydrate();
-    $developerRole->comeBackStronger();
+    $developer->rest();
+    $developer->hydrate();
+    $developer->comeBackStronger();
 }
 
 ```
